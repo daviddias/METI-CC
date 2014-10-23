@@ -1,0 +1,38 @@
+%!TEX encoding = UTF-8 Unicode
+% Chapter 1
+
+\chapter{Introdução} % Main chapter title
+
+\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 1. \emph{Introdução}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+dfsfndfdsfldsufahsiudhfasid
+
+No âmbito da disciplina de Computação em Nuvem foi desenvolvido um projecto designado de “Cloud Weather” com objetivo de analisar dados produzidos por sensores de humidade, temperatura e precipitação, calculando os mínimos, máximos e a médias de temperatura e humidade, tal como a quantidade total de precipitação de vários pontos geográficos, com especial atenção sobre cidades.\\
+Com o aumento da informação produzida pelos sensores e utilizadores nos sistemas de informação, a recolha e processamento de dados assume uma enorme preponderância nas tecnologias de informação atuais. \\
+Nos últimos anos, devido às constrições económicas houve a necessidade de aumentar a eficiência e flexibilidade dos sistemas informáticos. Surgiu um novo conceito que oferece recursos como ciclos de CPU, storage e bandwith, com um formato 'pay-as-you-go' e que hoje é conhecido como Cloud Computing.\\
+\\
+O Cloud Weather recebe um grande número de dados enviados por várias estações meteorológicas durante um longo período de tempo. Estes dados precisam de ser processados regularmente de forma a que a informação sobre o estado meteorológico esteja o mais atual possível. Para processar os dados que são produzidos em larga escala foi desenhado um algoritmo MapReduce que  processa os dados e resume os dados para permitir a sua visualização. Uma vez processados, os dados são guardados numa base de dados para serem acessíveis pelo utilizador da aplicação. Uma vez que o processamento dos dados termine, um utilizador do sistema Cloud Weather pode aceder à página Web do serviço par consultar a informação disponível. Assumindo que o serviço de meteorologia é requisitado por muitos utilizadores é necessário uma grande capacidade de resposta por parte da aplicação.No entanto, tal como acontece no caso de processamento de dados, estes pedidos encontram-se distribuídos de forma não uniforme durante o dia, o que significa que a solução de construir um data center para os servir resultaria num desperdício de recursos em algumas partes do dia.\\ 
+Em resposta à oscilação do número de pedidos foi adoptada uma solução de "Load Balancer" um mecanismo que permite que a nossa capacidade de resposta seja elástica em função da quantidade de pedidos, isto é, serão instanciadas mais máquinas do provedor quando precisarmos de mais capacidade de resposta. A carga é distribuída pelas várias máquinas. Quando o número de pedidos diminui, as instâncias deixam de ser necessárias, por isso são descartadas.  \\
+A vantagem da utilização de um provedor de  Cloud Computing para este  sistema  consiste no facto de não ser necessário um grande investimento na construção de um cluster para processar todos estes dados e pedidos exporádicos. Em alternativa alugamos as máquinas necessárias durante o tempo necessário para fazer o processamento pretendido. Esta solução é mais económica porque reduz a necessidade de ter poder computacional sem estar a ser utilizado enquanto não é necessário processar dados. Optámos pela solução de Cloud Computing IaaS da Amazon: Amazon Elastic Cloud Computing (EC2)\\
+
+O sistema é constítuido pelos seguintes componentes:
+   \begin{itemize}
+\item Ficheiro que contém todos os dados oriundos dos sensores das estações meteorológicas 
+\item Unidades EC2 que tratam do processamento dos dados usando um algoritmo de MapReduce
+\item Armazenamento dos dados em Base de Dados
+\item Servidores Web para consulta de base de dados
+\item Load Balancing dos servidores Web
+\item Auto-scalling dos servidores Web
+\end{itemize}
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+

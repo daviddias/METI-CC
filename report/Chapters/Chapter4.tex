@@ -1,0 +1,16 @@
+%!TEX encoding = UTF-8 Unicode
+% Chapter 3
+
+\chapter{Conclusões} 
+\label{Chapter4} 
+
+\lhead{Chapter 4. \emph{Conclusões} }
+A utilização dos Amazon Web Services permitiu criar uma arquitetura escalável com capacidade de processamento para grandes quantidades de dados e disponibilizar um serviço web escalável, garantindo o máximo de disponibilidade para o cliente. \\
+Um dos desafios da realização do projeto com o Amazon Web Services foi a falta de documentação objetiva. A documentação da Amazon é na maior parte das vezes bastante redundante, com pouco detalho técnico e com imenso conteúdo de marketing, sendo difícil responder à questão pela qual procuramos. Isto criou um esforço extra para elaborar soluções como por exemplo um servidor web escalável, que é algo comum nas aplicações web hoje em dia. No entanto uma vez passado o período de aprendizagem da plataforma, a interface, a API Java e as Command Tools são bastante poderosas e simples.\\
+\\
+O auto scalling é baseado na recolha periódica do estado do sistema. Isto é muito ineficiênciente a nível de escalonamento porque é necessário aguardar que sejam recolhidos os dados para tomar a decisão de escalar o sistema ou não. Isto cria um maior atraso na capacidade de resposta. Este sistema de analise por 'polling' tem um limite mínimo de recolha de informação de 1 em 1 minuto. Se a este intervalo somarmos o tempo necessário para o arranque de uma máquina até que esta fique operacional, o intervalo mínimo para responder à alteração é considerável e mais do que suficiente para levar a um utilizador a desistir de utilizar o serviço.\\
+\\
+A utilização da Amazon Web Services  (IaaS) faz com que a  portabilidade do nossos sistema não fique muito limitada. Se quiséssemos passar o sistema para outro provedor ou para o nosso próprio datacenter teríamos de replicar os serviços de load balancer e auto-scaling oferecidos pela Amazon. Uma solução para este problema seria ter adoptado uma solução híbrida (local+cloud), como é o caso do Eucalyptus, em que quando as máquinas do cluster local não são suficientes, escala para a Cloud. \\
+\\
+Caso este projeto tivesse sido desenvolvido com o âmbito comercial, deveria ser feito um estudo intenso a nível financeiro, pois ao adotarmos a Amazon Web Services, ficamos impossibilitados de migrar o nosso serviço para uma solução de outros provedores de larga escala como o Microsoft Azure ou o Google App Engine. Uma vez que estes não dispõe dos mesmos serviços como por exemplo o DynamoDB, teriamos de utilizar os serviços disponíveis pelo outro provedor.\\
+A solução final é adequada aos requisitos apresentados, é escalável, eficiente e simples de atualizar.

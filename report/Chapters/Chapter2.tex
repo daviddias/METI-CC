@@ -1,0 +1,78 @@
+%!TEX encoding = UTF-8 Unicode
+% Chapter Template
+
+\chapter{Estado da arte das tecnologias de computação na nuvem} % Main chapter title
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 2. \emph{Estado da arte das tecnologias de computação na nuvem}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+O Cloud Computing é um paradigma que veio introduzir aos serviços de computação, armazenamento, rede, segurança, entre outros disponíveis na internet, uma forma de consumo feito à medida, sendo só usado o necessário para responder à necessidade. Este não é um conceito novo, já usufrui mos dele diariamente quando utilizamos a eletricidade, água e gás das nossas casas, estes serviços são chamados de 'utilities', uma concepção que não existia na computação até a chegada do Cloud Computing. \\
+As tecnologias de computação na nuvem são bastante recentes, tendo um pouco mais de 4 anos, no entanto, visto darem a possibilidade a qualquer entidade de consumir apenas a computação, armazenamento, etc que necessitam, tiveram uma grande procura que ainda hoje se mantém, com o aparecimento de bastantes negócios que tiram a vantagem de um mundo interligado através da internet, como por exemplo o mundo das aplicações movéis.\\
+Nesta seção vamos descrever alguns dos 'players' mais influentes deste mercado tal como a Google, Amazon e Microsoft e ainda um dos concorrentes mais novos, a Nodejitsu. Será apresentado também as tecnologias existentes de armazenamento na Cloud e ainda uma comparação direta sobre dois dos provedores analisados para realizar este projeto.\\
+É de notar ainda que existem 3 categorias majoritárias em que podemos dividir os tipos de serviços prestados pela Cloud, temos:\\
+\begin{itemize}
+\item {\bf IaaS(Infrastructure as a Service)} - Caracteriza-se por disponibilizar de máquinas na Cloud em que os developers têm controle sobre as mesmas, podendo criar a sua própria instalação do sistema operativo
+\item {\bf PaaS(Platform as a Service) }- Dentro desta categoria entram os servidores aplicacionais e as API disponíveis para as aplicações Web
+\item {\bf SaaS(Software as a Service) }- Software alojado na internet, como por exemplo o caso do Wordpress ou a Citrix que disponibilizão um leque de aplicações via browser aos seus clientes.
+\end{itemize}
+
+A Cloud trouxe alguns novos desafios para os developers com novos modelos de programação, novas API e o MapReduce que vêm a permitir o tratamento de dados por várias máquinas em simultâneo para agregar no fim os seus resultados.
+
+
+\section{Os vários 'players' no mercado da computação na nuvem}
+
+Existem 3 maiores serviços concorrentes a liderar o mercado do Cloud Computing, estes são a Amazon AWS, Windows Azure e o Google App Engine, estes aparecem a priori como candidatos a melhor escolha para implementação da nossa aplicação na Cloud, no entanto decidimos avaliar um quarto provedor, a Nodejitsu, que permite desenvolver aplicações para a nuvem usando um servidor aplicacional chamado node.js, este é completamente open source e tem uma grande comunidade a oferecer suporte.
+\\
+
+\subsection{Amazon AWS}
+A Amazon foi a pioneira a introduzir no mercado 'Public Clouds', o seu serviço consiste em disponibilizar máquinas virtuais on demand com o preço ajustado ao consumo feito. \\
+Tem soluções de storage em formato de bases de dados relacionais(Relational Database Service, RDS) e bases de dados NoSQL (SimpleDB que veio a ser substituído pelo DynamoDB), estas são altamente escaláveis e tolerantes a faltas e por último disponibíliza um serviço de file storage, denominado por Simple System Storage(S3).\\
+Existem ainda outros serviços disponibilizados pela Amazon como o SQS, um sistema de mensagens em fila, a Elastic Cache, um sistema de cache distribuído, a CloudFront, um serviço CDN(Content Delivery Network).\\
+A Amazon dispõe ainda de um 'Free Tier' que não inclui todos os seus serviços mas que dá hipótese aos programadores de terem acesso a uma plataforma de computação distribuída sem custo.\\
+
+
+\subsection{Google App Engine}
+
+O Google App Engine(GAE) levou para a Cloud ambientes de desenvolvimento já conhecidos pelos programadores como o Java e o Python, é o único dos serviços estudados que dispões de uma versão, embora de consumo limitado, completamente gratuita.\\
+O modelo do GAE divide as suas máquinas em duas categorias:\\
+		
+\begin{itemize}
+\item {\bf App Engine Instances } - Responsáveis por instanciar as aplicações web, estas não são máquinas virtuais, mas sim ambientes de execução controlados chamados de 'sandbox'
+\item {\bf App Engine Backends }- Semelhantes as Instances, mas com elevada capacidade de computação, usadas para processamento de dados em background.
+\end{itemize}
+	
+O modelo de storage do GAE é o App Engine Datastore, este garante que a aplicação se torna escálavel, sendo que os dados são replicados em grande quantidades. No entanto o modelo de storage impede que sejam utilizados serviços de terceiros para guardar informação. O storage é feito em bases de dados NoSQL, relacionais e em file system (blob storage).\\
+Tem disponivél uma API para MapReduce, Channel, que permite notificações por 'push', listas de tarefas (Task Queues) e MemCache, uma memória distribuída.	
+
+\subsection{Windows Azure}
+O Windows Azure demonstra uma das taxas de crescimento mais rápido entre as nuvens públicas, fornece um serviço de Platform as a Service (Paas) rico em funcionalidade.\\
+O serviço de computação disponibilizado divide-se em 3 tipos:
+	
+\begin{itemize}
+\item {\bf Web Role} -  Máquinas dedicadas para alojar as aplicações web e para responder aos pedidos dos clientes
+\item {\bf Worker Role }- Máquinas destinadas a efectuar processamentos com maior esforço
+\item {\bf VM Role }- MMáquinas virtuais, estas não são persistentes
+\end{itemize}	
+
+A juntar ao serviço de computação, temos ainda acesso a um serviço de storage que se divide em:
+\begin{itemize}
+\item {\bf Table Storage } -  Uma base de dados altamente escalável
+\item {\bf Queue Storage  }- Uma storage de filas de mensagens
+\item {\bf Blob Storage }- File System Storage
+\item {\bf SQL Azure }- Bases de dados relacionais preparadas para a Cloud.
+\end{itemize}	
+
+Não está disponível uma versão gratuita limitada, mas é oferecido um período de 3 meses de experimentação.\\
+Outros serviços oferecidos pelo Azure são o Business Analytics que permite efetuar analises ao desempenho da nossa aplicação, Caching e um Content Delivery Network que trata de mover a nossa informação para o local onde se deve encontrar para diminuir o delay nas respostas.
+
+
+\subsection{Nodejitsu}
+A Nodejitsu, ao contrário dos provedores descritos previamente no documento, oferece uma solução centrada na parte de computação. É usado 'node.js' como servidor aplicacional, mas não é dispõe qualquer tipo de Storage associado, o que trás a vantagem de que não é feito um 'lock in' ao provedor, ou seja, podemos migrar a nossa aplicação de provedor sem ter que alterar a forma como a funcionalidade está implementada e sem perder acesso a nenhum serviço especial do servidor.
+
+
+
+
+
+
+
