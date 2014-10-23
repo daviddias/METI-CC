@@ -1,0 +1,53 @@
+<!-- Ant build script for compiling and running the AWS Java SDK SimpleDB sample.
+     Don't forget to fill in your AWS access credentials in AwsCredentials.properties
+     before trying to run it.  -->
+<project name="Amazon SimpleDB Sample" default="jar" basedir=".">
+    
+    <property name="main-class"  value="org.myorg.AmazonDynamoDB_TryQuery"/>
+
+    <pathconvert property="mf.classpath" pathsep=" ">
+        <path id="Project.libs">
+            <fileset dir="lib">
+                <include name="**/*.jar" />
+            </fileset>
+        </path>
+    </pathconvert>
+
+    <!-- Desta forma não funciona adicionar este classpath ao manifest, temos de usar a acima
+    <path id="aws.java.sdk.classpath">
+        <fileset dir="lib/third-party" includes="**/*.jar"/>
+        <fileset dir="lib" includes="**/*.jar"/>
+        <pathelement location="."/>
+    </path>
+    -->
+
+    <target name="prepare">
+        <echo message="Preparing the project for build (making dirs)..." />
+        <delete file="ProccessWeatherData.jar"/>
+        <delete dir="build"/>
+        <mkdir dir="build" />
+    </target>
+
+    <target name="compile" depends="prepare">
+        <echo message="Compiling classes" />
+        <javac srcdir="src" destdir="build" classpathref="mf.classpath"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <echo message="Creating jar file" /> 
+        <jar destfile="AmazonDynamoDB_TryQuery.jar" basedir="build">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+                <attribute name="Class-Path" value="${mf.classpath}"/>
+            </manifest>
+        </jar>
+    </target> 
+
+    <target name="run">
+        <java jar="AmazonDynamoDB_TryQuery.jar" fork="true"/>
+    </target>
+
+</project>
+
+
+

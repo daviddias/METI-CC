@@ -1,0 +1,314 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"set",
+				"setEndpoint"
+			],
+			[
+				"s3",
+				"s3Path"
+			],
+			[
+				"get",
+				"getHumidity"
+			],
+			[
+				"avg",
+				"avgHumidity"
+			],
+			[
+				"av",
+				"avgHumidity"
+			],
+			[
+				"Weath",
+				"WeatherStatsWritable"
+			],
+			[
+				"co",
+				"collect"
+			],
+			[
+				"to",
+				"totalRainfall"
+			],
+			[
+				"num",
+				"numberOfMeasures"
+			],
+			[
+				"line",
+				"lineSplited"
+			],
+			[
+				"lin",
+				"lineSplited"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"l",
+				"lineSplited"
+			],
+			[
+				"node",
+				"node5"
+			],
+			[
+				"regist",
+				"registerAllTheUsers"
+			],
+			[
+				"Storage",
+				"StorageLookup"
+			],
+			[
+				"Sto",
+				"StoragePut"
+			],
+			[
+				"wi",
+				"write"
+			],
+			[
+				"Stora",
+				"StorageLookup"
+			],
+			[
+				"Mul",
+				"MultiChatIdentifier"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"Me",
+				"MessageOneOnOne"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
+				"c",
+				"close"
+			],
+			[
+				"M",
+				"MessageOneOnOne"
+			],
+			[
+				"nod",
+				"node2"
+			],
+			[
+				"int",
+				"int"
+			],
+			[
+				"B",
+				"BufferedReader"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3Only/build.xml",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3Only/src/ProccessWeatherData.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3Only/awsSamples/AmazonS3/S3Sample.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3Only/support/MapReduce Amazon Notas.txt",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3Only/src/AwsCredentials.properties",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3Only/AWS Security Credentials.txt",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataAmazonS3AndDynamoDB/AWS Security Credentials.txt",
+		"/Users/DavidDias/Desktop/CN/WordcountAmazon/WordCount.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/src/WeatherWritable.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/src/WeatherStatsWritable.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/support/MapReduce Local Notas.rtf",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/release.sh",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/test.sh",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/src/ProccessWeatherData.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/ProcessWeatherData.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/WeatherWritable.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/WeatherStatsWritable.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/src/ProcessWeatherData.java",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/MapReduce Local Notas.rtf",
+		"/Users/DavidDias/Desktop/CN/proccessWeatherDataLocal/MapReduce Local Notas",
+		"/Users/DavidDias/Desktop/CN/WordcountLab/WordCount.java",
+		"/usr/local/Cellar/hadoop/1.1.1/libexec/conf/hadoop-env.sh",
+		"/usr/local/Cellar/hadoop/1.1.1/libexec/conf/core-site.xml",
+		"/Users/DavidDias/Documents/workspace/cn/website/weathersearch.php",
+		"/Users/DavidDias/Documents/workspace/cn/website/index.php",
+		"/Users/DavidDias/Documents/workspace/cn/website/factor.php",
+		"/Users/DavidDias/Documents/workspace/sirs/logs/sirs.log",
+		"/Users/DavidDias/Documents/workspace/pythonRunTest/pyScripts/synFloodDOS.py",
+		"/Users/DavidDias/Desktop/sersGraphs/20nodes/node20With20Nodes.Log",
+		"/Users/DavidDias/Desktop/sersGraphs/registerAllTheUsers.sh",
+		"/Users/DavidDias/.tmux.conf",
+		"/Users/DavidDias/Google Drive/IST/Courses/CN/Lab1/Java/WordCount.java",
+		"/Users/DavidDias/Google Drive/IST/Courses/CN/Lab1/Java/Print.java",
+		"/Users/DavidDias/Downloads/main.css",
+		"/Users/DavidDias/Downloads/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"			\n",
+			"end",
+			"a",
+			"asds",
+			"a",
+			"s",
+			"a",
+			"s",
+			"a",
+			"as",
+			"sda",
+			"\n",
+			"sdasda",
+			"Session",
+			"SessionManager"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"u",
+				"untitled"
+			],
+			[
+				"ds",
+				"dsasdasasa"
+			],
+			[
+				"title",
+				"untitled"
+			],
+			[
+				"",
+				"dsasdasasa"
+			],
+			[
+				"sa",
+				"dsasdasasa"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": true
+}

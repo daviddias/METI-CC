@@ -1,0 +1,15 @@
+Colocar um ficheiro dentro do HDFS
+Dentro do hadoop - "/usr/local/hadoop/bin/"
+./hadoop fs -put <pathDoFicheiro> <user>
+
+Manipulating Hadoop FS
+exemple: making a directory
+hadoop@ginja1:/usr/local/hadoop/bin$ ./hadoop fs -mkdir /user/hadoop/david/output
+
+
+
+Executing Wordcount
+
+hadoop jar wordcount.jar org.myorg.WordCount /LoremIpsum.txt /output2
+
+

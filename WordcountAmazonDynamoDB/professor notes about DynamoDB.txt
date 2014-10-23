@@ -1,0 +1,15 @@
+Connection to DynamoDB (Link)
+
+Those students who wish to use DynamoDB should download the AWS SDK for Java in order to compile the Map Reduce application using the included jar, e.g.:
+
+javac -classpath ./aws-java-sdk-1.3.22.jar:./hadoop-core-1.0.3.jar -d wordcount_classes WordCount.java
+
+jar -cf ./wordcountDDB.jar -C wordcount_classes/ .
+ 
+An example of the wordcount application which writes to DynamoDB is available here: WordCount.java
+ 
+If the application is run locally it is necessary to point Hadoop to the AWS SDK jar with the libjars option, i.e.:
+ 
+hadoop jar wordcountDDB.jar org.myorg.WordCount -libjars ./aws-java-sdk-1.3.22.jar inputFolder outputFolder
+ 
+The database it accesses is a DynamoDB table with a word for a key and a counter for an additional field. The table has to be created before running the application. Please also note the setEndpoint command to connect to the right region of DynamoDB. The list of available endpoints is here: http://docs.amazonwebservices.com/general/latest/gr/rande.html

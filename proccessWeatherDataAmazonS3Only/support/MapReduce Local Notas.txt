@@ -1,0 +1,22 @@
+#####################################
+#####   MapReduce Local Notas   #####   
+#####################################
+
+
+#####   Compiling to use Hadoop
+javac -classpath <pathDoJarDoHadoop> -d <paraOndeVãoAsClassesCompiladas> <ClasseACompilar>
+jar -cf <PathOndeQueremosQueFiqueOJar> -C <OndeEstãoAsClassesCompiladas> .
+
+exemplo:
+	javac -classpath ./hadoop-core-1.0.3.jar -d wordcount_classes WordCount.java
+	jar -cf ./wordcountDDB.jar -C wordcount_classes/ .
+
+
+#####   Put in Hadoop
+hadoop fs -put <pathDoFicheiro> <pathDentroDoHadoopOndeColocarOFicheiro>
+
+
+#####   Run in Hadoop
+hadoop jar <pathDoJarEmLocalFS> <ClasseComMain> <PathFicheiroAProcessar> <OututFolder>
+exemplo: 
+	hadoop jar wordcount.jar org.myorg.WordCount /LoremIpsum.txt /output2

@@ -1,0 +1,9 @@
+#####################################
+#####   MapReduce Local Amazon   #####   
+#####################################
+
+Jar Location
+s3n://ist.pwd/ProccessWeatherData.jar
+
+Arguments
+org.myorg.ProccessWeatherData ist.pwd sample_log_big.txt

@@ -1,0 +1,32 @@
+{
+	"folders":
+	[
+		{
+			"path": "proccessWeatherDataWebpage"
+		},
+		{
+			"path": "proccessWeatherDataDynamoQueryTest"
+		},
+		{
+			"path": "proccessWeatherDataAmazonS3AndDynamoDB"
+		},
+		{
+			"path": "proccessWeatherDataAmazonS3Only"
+		},
+		{
+			"path": "proccessWeatherDataLocal"
+		},
+		{
+			"path": "WordcountLab"
+		},
+		{
+			"path": "WordcountAmazonDynamoDB"
+		},
+		{
+			"path": "proccessWeatherDataAmazonS3Only/awsSamples/AmazonS3"
+		},
+		{
+			"path": "proccessWeatherDataAmazonS3AndDynamoDB/awsSamples/AmazonDynamoDB"
+		}
+	]
+}

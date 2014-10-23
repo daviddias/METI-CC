@@ -1,0 +1,2 @@
+Main-Class: org.myorg.AmazonDynamoDB_TryQuery
+Class-Path: ./lib/*:./lib/third-party/*
